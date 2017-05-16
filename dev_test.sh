@@ -8,4 +8,4 @@ then
 fi
 
 source ${WATCHMEN_VENV_ROOT}/bin/activate
-pytest
+pytest -v -s
