@@ -1,8 +1,8 @@
-from watchmen import Watchmen
+from watchmen.watchmen import Watchmen
 
 
 def test_broken_url():
     """Assert if the constructor works correctly. """
-    watchmen = Watchmen()
-    watchmen.addPotentialUrls('iambroken')
-    assert 'iambroken' not in watchmen.goodURLs()
+    watch = Watchmen();
+    watch.add_potential_urls('iambroken')
+    assert 'iambroken' not in watch.good_urls()

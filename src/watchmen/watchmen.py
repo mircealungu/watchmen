@@ -1,6 +1,6 @@
-from url_list import URLList
-from curator import Curator
-from articles import Articles
+from watchmen.url_list import URLList
+from watchmen.curator import Curator
+from watchmen.articles import Articles
 
 
 class Watchmen:
@@ -20,11 +20,11 @@ class Watchmen:
         return self.urls
 
     def refresh(self):
-        self.urls = self.curator.goodUrls()
-        self.articles.clean()
+        self.urls = self.curator.good_urls()
+        self.articles.clear_cache()
 
     def articles_for_url(self, url):
         return self.articles.articles_for_url(url)
 
-    def article_content(self, articleURL):
-        return self.articles.article_content(articleURL)
+    def article_content(self, url):
+        return self.articles.article_content(url)

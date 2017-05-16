@@ -11,6 +11,6 @@ class Curator:
                 urls = urls + [url]
         return urls
 
-    def is_readable(url):
+    def is_readable(self, url):
         """ Checks if the given feed works well for readability."""
         pass

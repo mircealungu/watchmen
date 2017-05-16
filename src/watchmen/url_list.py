@@ -1,10 +1,10 @@
 class URLList:
     """ Provides access to a database of feeds. """
     def __init__(self):
-        pass
+        self.urls = []
 
-    def add(self, feeds):
-        pass
+    def add(self, new_urls):
+        self.urls += [new_urls]
 
     def get(self):
-        pass
+        return self.urls
