@@ -3,7 +3,7 @@
 
 A simple python library to handle online articles.
 
-##Current features:
+## Current features:
 - Parsing the articles into a nice and readable format, determining many attributes using [newspaper](https://newspaper.readthedocs.io/en/latest/).
   - Caching these articles with a least-recently-used algorithm.
  
