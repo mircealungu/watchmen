@@ -16,6 +16,7 @@ To retrieve an article, you can something as follows:
 `article_parser = ArticleParser()`
 
 `article = article_parser.get_article('http://coolarticle.nl/article.html')`
+
 `print(article.title)`
 
 `print(article.text)`
