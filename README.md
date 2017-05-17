@@ -10,8 +10,12 @@ A simple python library to handle online articles.
 ## Example
 ### Retrieving an article
 To retrieve an article, you can something as follows:
-`from watchmen import ArticleParser` 
+
+`from watchmen import ArticleParser`
+
 `article_parser = ArticleParser()`
+
 `article = article_parser.get_article('http://coolarticle.nl/article.html')`
 `print(article.title)`
+
 `print(article.text)`
