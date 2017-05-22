@@ -5,7 +5,7 @@ from watchmen.cache import LRUCache
 class ArticleParser:
     """ Downloads and analyses articles, stores them in cache for efficient retrieval. """
 
-    CACHE_SIZE = 100
+    CACHE_SIZE = 1000
 
     def __init__(self, cache_size = CACHE_SIZE):
         """ Initialises the cache, where cache size is CACHE_SIZE by default. """
