@@ -90,6 +90,3 @@ ENV/
 
 # PyCharm
 .idea
-
-# Setup
-MANIFEST
