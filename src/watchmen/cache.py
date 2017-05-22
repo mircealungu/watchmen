@@ -8,7 +8,7 @@ class LRUCache:
         self.cache = collections.OrderedDict()
 
     def get(self, key):
-        """ Update the timestamp or return a fetch error. """
+        """ Update the order or return a fetch error. """
         try:
             value = self.cache.pop(key)
             self.cache[key] = value
@@ -17,7 +17,7 @@ class LRUCache:
             return False
 
     def set(self, key, value):
-        """ Update the timestamp or add a new value.
+        """ Update the order or add a new value.
             Will remove old values from the cache if we reached our maximum capacity."""
         try:
             self.cache.pop(key)

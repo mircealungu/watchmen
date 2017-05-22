@@ -1,24 +1,21 @@
 import time
 import pytest
+import watchmen
 from watchmen.article_parser import ArticleParser
 
 ARTICLE_URL = 'http://www.telegraaf.nl/telesport/28181735/__Bertens_simpel_door_in_Rome__.html'
 
 
-@pytest.fixture
-def article_parser():
-    return ArticleParser()
-
-
-def test_get_article(article_parser):
+def test_get_article():
     """ Retrieving an article should result in non-empty content. """
-    article = article_parser.get_article(ARTICLE_URL)
+    article = watchmen.article_parser.get_article(ARTICLE_URL)
     assert len(article.title) > 0
     assert len(article.text) > 0
 
 
-def test_get_article_cache(article_parser):
+def test_get_article_cache():
     """ The second request for the same article should be faster. """
+    article_parser = ArticleParser()
     time_start = time.time()
     article_parser.get_article(ARTICLE_URL)
     time_passed_first_request = time.time() - time_start
