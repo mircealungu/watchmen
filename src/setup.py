@@ -7,5 +7,5 @@ setup(name='watchmen',
       author_email="zeeguu_team@zeeguu.com",
       url='https://github.com/mircealungu/watchmen',
       packages=['watchmen'],
-      install_requires=("newspaper3k==0.2.0")
+      install_requires=("newspaper3k==0.2.2")
       )
