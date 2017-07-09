@@ -3,7 +3,7 @@
 
 An extremely simple and small python library to parse and cache online articles.
 
-Originally designed for use in [Zeeguu](), but can be used for anyone in need of some simple but quick caching.
+Originally designed for use in [Zeeguu](https://github.com/mircealungu/Zeeguu-Core), but can be used by anyone in need of some simple but quick caching.
 
 ## Current features:
 - Parsing the articles into a nice and readable format, determining many attributes using [newspaper](https://newspaper.readthedocs.io/en/latest/).
