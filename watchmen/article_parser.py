@@ -7,13 +7,17 @@ class ArticleParser:
 
     CACHE_SIZE = 1000
 
-    def __init__(self, cache_size = CACHE_SIZE):
+    def __init__(self, cache_size=CACHE_SIZE):
         """ Initialises the cache, where cache size is CACHE_SIZE by default. """
         self.articleCache = LRUCache(cache_size)
 
     def get_article(self, article_url):
         """ Downloads and parses an article based on the url, or retrieves it from cache. 
-            Uses the newspaper library to filter out any clutter. """
+            Uses the newspaper library to filter out any clutter.
+
+            :returns a newspaper.Article object
+
+            """
         article = self.articleCache.get(article_url)
 
         if not article:
